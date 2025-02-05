@@ -1,0 +1,216 @@
+/* Estilos generales */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  background-color: #D14D72;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  font-weight: bold;
+}
+
+/* Sección Inicio */
+.hero {
+  background-color: #FFE6E6;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background-color: #D14D72;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Sección Sobre Mí */
+.about {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-content img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* Sección Servicios */
+.services {
+  background-color: #FFE6E6;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Cursos */
+.courses {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.courses h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cursos-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.curso-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.curso-item img {
+  width: 100%;
+  display: block;
+}
+
+.curso-info {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(209, 77, 114, 0.8);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  transition: bottom 0.3s ease;
+}
+
+.curso-item:hover .curso-info {
+  bottom: 0;
+}
+
+/* Sección Contacto */
+.contact {
+  background-color: #FFE6E6;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #D14D72;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #D14D72;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+footer .social-icons img {
+  width: 24px;
+}
